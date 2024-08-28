@@ -22,7 +22,7 @@ const Navbar = () => {
             <Link
               key={index}
               to={item.to}
-              className="text-sm font-medium hover:underline underline-offset-8 hover:text-sky-500"
+              className="text-sm font-semibold hover:underline underline-offset-8 hover:text-sky-500"
             >
               {item.name}
             </Link>
