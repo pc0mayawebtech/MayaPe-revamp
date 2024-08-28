@@ -1,0 +1,12 @@
+.heroSectionMain {
+    background-image: url('/public/bg-half.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    .heroSectionMain {
+        background-size: 100% 80%;
+    }
+    
+}
