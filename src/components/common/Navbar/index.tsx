@@ -32,12 +32,18 @@ const Navbar = () => {
             </Link>
           ))}
         </nav>
-        <Button
-          variant="outline"
-          className="hidden md:inline-flex bg-sky-500 text-white hover:bg-sky-600 hover:text-white"
+        <a
+          href="https://mayapayinpayout.com/login"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Login
-        </Button>
+          <Button
+            variant="outline"
+            className="hidden md:inline-flex bg-sky-500 text-white hover:bg-sky-600 hover:text-white"
+          >
+            Login
+          </Button>
+        </a>
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="outline" size="icon" className="md:hidden">
@@ -58,12 +64,18 @@ const Navbar = () => {
                   </Link>
                 ))}
               </div>
-              <Button
-                variant="outline"
-                className="mt-auto bg-sky-500 text-white hover:bg-sky-600 hover:text-white"
+              <a
+                href="https://mayapayinpayout.com/login"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <SheetClose>Login</SheetClose>
-              </Button>
+                <Button
+                  variant="outline"
+                  className="mt-auto bg-sky-500 text-white hover:bg-sky-600 hover:text-white"
+                >
+                  <SheetClose>Login</SheetClose>
+                </Button>
+              </a>
             </div>
           </SheetContent>
         </Sheet>
