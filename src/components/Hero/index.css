@@ -3,6 +3,20 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+.heroDashboard {
+    animation: grow-and-shrink 2000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+@keyframes grow-and-shrink {
+    0% {
+      transform: translate(-6px, 6px);
+    }
+    100% {
+      transform: translate(6px, -6px);
+    }
+  }
 
 @media (max-width: 768px) {
     .heroSectionMain {

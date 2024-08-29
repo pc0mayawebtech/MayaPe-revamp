@@ -1,6 +1,3 @@
-import { Button } from "../ui/button";
-import { MoveRight } from "lucide-react";
-
 const WorkSteps = () => {
   return (
     <div className="w-full max-w-screen px-4 sm:px-12">
@@ -16,8 +13,9 @@ const WorkSteps = () => {
             </span>
           </div>
         </div>
-        <h1 className="font-inter-tight text-3xl md:text-6xl font-bold text-gray-800 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-b dark:from-violet-200 dark:to-gray-200 pb-4"
-        style={{marginTop: '10px', marginBottom: '40px'}}
+        <h1
+          className="font-inter-tight text-3xl md:text-6xl font-bold text-gray-800 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-b dark:from-violet-200 dark:to-gray-200 pb-4"
+          style={{ marginTop: "10px", marginBottom: "40px" }}
         >
           How MayaPe Works
         </h1>
@@ -34,20 +32,16 @@ const WorkSteps = () => {
               goals. Our team will work closely with you to identify your pain
               points and develop a tailored solution.
             </p>
-            <Button
-              variant={"ghost"}
-              className="text-sky-500 hover:text-sky-500"
-            >
-              Get Started <MoveRight size={15} className="ml-2" />{" "}
-            </Button>
           </div>
-          <img
-            src="/temp.webp"
-            width="500"
-            height="400"
-            alt="Step 1"
-            className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:h-full"
-          />
+          <div className="bg-gradient-to-l from-sky-200 via-sky-50 rounded-sm ">
+            <img
+              src="/verifyGif.gif"
+              width="450"
+              height="400"
+              alt="Step 1"
+              className="mx-auto overflow-hidden rounded-xl object-center  "
+            />
+          </div>
         </section>
 
         <svg
@@ -56,6 +50,7 @@ const WorkSteps = () => {
           viewBox="0 0 100 200"
           xmlns="http://www.w3.org/2000/svg"
           className="hidden sm:block"
+          style={{ marginTop: 0 }}
         >
           <path
             d="M -150 50 C 40 10, 60 10, 90 50 S 140 190, 290 90 10"
@@ -68,13 +63,15 @@ const WorkSteps = () => {
         </svg>
 
         <section className="flex sm:grid flex-col-reverse sm:grid-cols-1 items-center gap-10 md:grid-cols-2">
-          <img
-            src="/temp.webp"
-            width="500"
-            height="400"
-            alt="Step 2"
-            className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:h-full"
-          />
+          <div className="bg-gradient-to-r from-blue-200 via-sky-50 rounded-sm ">
+            <img
+              src="/step2Gif.gif"
+              width="450"
+              height="400"
+              alt="Step 2"
+              className="mx-auto overflow-hidden rounded-xl object-center  "
+            />
+          </div>
           <div className="space-y-4">
             <div className="inline-block rounded-lg bg-sky-400 px-5 py-1 text-md text-white">
               Step 2
@@ -88,12 +85,6 @@ const WorkSteps = () => {
               objectives. We'll work closely with you to ensure the design meets
               your expectations.
             </p>
-            <Button
-              variant={"ghost"}
-              className="text-sky-500 hover:text-sky-500"
-            >
-              Get Started <MoveRight size={15} className="ml-2" />{" "}
-            </Button>
           </div>
         </section>
 
@@ -127,20 +118,16 @@ const WorkSteps = () => {
               cutting-edge technologies and best practices to ensure a
               high-quality, scalable, and secure solution.
             </p>
-            <Button
-              variant={"ghost"}
-              className="text-sky-500 hover:text-sky-500"
-            >
-              Get Started <MoveRight size={15} className="ml-2" />{" "}
-            </Button>
           </div>
-          <img
-            src="/temp.webp"
-            width="500"
-            height="400"
-            alt="Step 3"
-            className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:h-full"
-          />
+          <div className="bg-gradient-to-l from-sky-200 via-sky-50 rounded-sm ">
+            <img
+              src="/step3Gif.gif"
+              width="450"
+              height="400"
+              alt="Step 3"
+              className="mx-auto overflow-hidden rounded-xl object-center  "
+            />
+          </div>
         </section>
 
         <svg
@@ -149,6 +136,7 @@ const WorkSteps = () => {
           viewBox="0 0 100 200"
           xmlns="http://www.w3.org/2000/svg"
           className="hidden sm:block"
+          style={{ marginTop: 0 }}
         >
           <path
             d="M -150 50 C 40 10, 60 10, 90 50 S 140 190, 290 90 10"
@@ -161,13 +149,15 @@ const WorkSteps = () => {
         </svg>
 
         <section className="flex sm:grid flex-col-reverse sm:grid-cols-1 items-center gap-10 md:grid-cols-2">
-          <img
-            src="/temp.webp"
-            width="500"
-            height="400"
-            alt="Step 4"
-            className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:h-full"
-          />
+          <div className="bg-gradient-to-r from-sky-200 via-sky-50 rounded-sm py-4 w-full">
+            <img
+              src="/step4Svg.svg"
+              width="250"
+              height="250"
+              alt="Step 4"
+              className="mx-auto overflow-hidden rounded-xl object-center animate-bounce	duration-4000"
+            />
+          </div>
           <div className="space-y-4">
             <div className="inline-block rounded-lg bg-sky-400 px-5 py-1 text-md text-white">
               Step 4
@@ -180,12 +170,6 @@ const WorkSteps = () => {
               infrastructure and provide ongoing maintenance and support to
               ensure it continues to meet your needs.
             </p>
-            <Button
-              variant={"ghost"}
-              className="text-sky-500 hover:text-sky-500"
-            >
-              Get Started <MoveRight size={15} className="ml-2" />{" "}
-            </Button>
           </div>
         </section>
 
@@ -219,20 +203,16 @@ const WorkSteps = () => {
               regularly review the solution and make updates to ensure it
               remains effective and efficient, adapting to your evolving needs.
             </p>
-            <Button
-              variant={"ghost"}
-              className="text-sky-500 hover:text-sky-500"
-            >
-              Get Started <MoveRight size={15} className="ml-2" />{" "}
-            </Button>
           </div>
-          <img
-            src="/temp.webp"
-            width="500"
-            height="400"
-            alt="Step 5"
-            className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:h-full"
-          />
+          <div className="bg-gradient-to-l from-sky-200 via-sky-50 rounded-sm ">
+            <img
+              src="/step5Gif.gif"
+              width="450"
+              height="400"
+              alt="Step 5"
+              className="mx-auto overflow-hidden rounded-xl object-center  "
+            />
+          </div>
         </section>
       </div>
     </div>

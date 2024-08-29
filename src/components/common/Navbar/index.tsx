@@ -1,21 +1,25 @@
 import "./index.css";
-import { Sheet, SheetContent, SheetTrigger } from "../../ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "../../ui/sheet";
 import { Link } from "react-router-dom";
 import { Button } from "../../ui/button";
 import { MenuIcon } from "lucide-react";
 
 const Navbar = () => {
   const navItems = [
-    { name: "Home", to: "#" },
-    { name: "About Us", to: "#" },
-    { name: "Contact Us", to: "#" },
+    { name: "Home", to: "/" },
+    { name: "About Us", to: "/about-us" },
+    { name: "Contact Us", to: "contact-us" },
   ];
 
   return (
     <div>
       <header className="shadow-sm bg-white px-4 lg:px-6 h-14 flex items-center justify-between max-w">
-        <Link to="#" className="flex items-center justify-center outline-none">
-          MayaPe
+        <Link to="/" className="flex items-center justify-center outline-none">
+          <img
+            src="/mayapeLogo.png"
+            alt=""
+            className="aspect-[3/1] h-auto w-28"
+          />
         </Link>
         <nav className="hidden md:flex gap-10">
           {navItems.map((item, index) => (
@@ -28,7 +32,10 @@ const Navbar = () => {
             </Link>
           ))}
         </nav>
-        <Button variant="outline" className="hidden md:inline-flex bg-sky-500 text-white hover:bg-sky-600 hover:text-white">
+        <Button
+          variant="outline"
+          className="hidden md:inline-flex bg-sky-500 text-white hover:bg-sky-600 hover:text-white"
+        >
           Login
         </Button>
         <Sheet>
@@ -47,12 +54,15 @@ const Navbar = () => {
                     to={item.to}
                     className="text-sm font-medium hover:underline underline-offset-8 hover:text-sky-500"
                   >
-                    {item.name}
+                    <SheetClose>{item.name}</SheetClose>
                   </Link>
                 ))}
               </div>
-              <Button variant="outline" className="mt-auto bg-sky-500 text-white hover:bg-sky-600 hover:text-white">
-                Login
+              <Button
+                variant="outline"
+                className="mt-auto bg-sky-500 text-white hover:bg-sky-600 hover:text-white"
+              >
+                <SheetClose>Login</SheetClose>
               </Button>
             </div>
           </SheetContent>

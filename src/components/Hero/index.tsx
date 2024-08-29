@@ -1,18 +1,25 @@
 import { MoveRight } from "lucide-react";
 import { Button } from "../ui/button";
 import "./index.css";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
-    <div className="">
+    <div className="relative">
       <section className="w-full py-24 md:py-24 lg:py-24 heroSectionMain min-h-[90vh] max-h-screen px-4 sm:px-8">
         <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
+          <img
+            src="/dashboard1.png"
+            alt="dashboard"
+            className="heroDashboard hidden sm:block absolute right-10 top-10 h-48 w-auto rounded-md z-[2]"
+          />
           <img
             src="/payMobile.svg"
             width="450"
             height="310"
             alt="Features"
-            className="hidden sm:block mx-auto overflow-hidden rounded-xl object-cover object-center lg:order-last"
+            className="hidden sm:block mx-auto overflow-hidden z-[3] rounded-xl object-cover object-center lg:order-last"
           />
           <div className="space-y-8">
             <div className="space-y-3">
@@ -28,7 +35,11 @@ const Hero = () => {
                 your cash cycle into a cash instant.
               </p>
             </div>
-            <Button variant={"ghost"} className="text-sky-500 hover:text-sky-600">
+            <Button
+              onClick={() => navigate("/contact-us")}
+              variant={"ghost"}
+              className="text-sky-500 hover:text-sky-600"
+            >
               Get Started <MoveRight size={15} className="ml-2" />{" "}
             </Button>
           </div>

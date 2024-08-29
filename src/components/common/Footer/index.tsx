@@ -1,18 +1,29 @@
+import { MapPinIcon } from "lucide-react";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
   return (
     <div>
-      <footer className="relative bg-blueGray-200 pt-20 pb-6">
+      <footer className="relative bg-gradient-to-t from-sky-200 via-sky-50 to-white pt-20 pb-6">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap text-left lg:text-left">
             <div className="w-full lg:w-6/12 px-4">
-              <h4 className="text-3xl fonat-semibold text-blueGray-700">
-                Let's keep in touch!
-              </h4>
-              <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
-                Find us on any of these platforms, we respond 1-2 business days.
-              </h5>
+              <img src="/mayapeLogo.png" alt="logo" className="h-auto w-32" />
+              <div className="mt-6 flex flex-col gap-2">
+                <p className="text-muted-foreground font-semibold">
+                T-04, A-44, near sector-15 Metro Station, <br /> Sector 2, Noida, Uttar Pradesh <br /> 201301
+                </p>
+                <Link
+                  to="https://maps.app.goo.gl/SpDLMcd91Xzaxha1A"
+                  target="_blank"
+                  className="inline-flex items-center gap-2 text-primary hover:underline mt-2"
+                >
+                  <MapPinIcon className="w-4 h-4 text-sky-500" />
+                  View on Map
+                </Link>
+              </div>
             </div>
             <div className="w-full lg:w-6/12 px-4">
               <div className="flex flex-wrap items-top mb-6">
@@ -22,36 +33,36 @@ const Footer = () => {
                   </span>
                   <ul className="list-unstyled">
                     <li>
-                      <a
+                      <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="#"
+                        to="/"
                       >
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="#"
+                        to="/about-us"
                       >
                         About Us
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="#"
+                        to="/contact-us"
                       >
                         Contact Us
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="#"
+                        to="#"
                       >
                         Sign In
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -61,36 +72,28 @@ const Footer = () => {
                   </span>
                   <ul className="list-unstyled">
                     <li>
-                      <a
+                      <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="#"
-                      >
-                        MIT License
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="#"
+                        to="#"
                       >
                         Terms &amp; Conditions
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="#"
+                        to="#"
                       >
                         Privacy Policy
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="#"
+                        to="#"
                       >
                         Contact Us
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -102,10 +105,8 @@ const Footer = () => {
             <div className="w-full md:w-4/12 px-4 mx-auto text-center">
               <div className="text-sm text-blueGray-500 font-semibold py-1">
                 Copyright © <span id="get-current-year">{year}</span>
-                <a
-                  href="#"
+                <span
                   className="text-blueGray-500 hover:text-gray-800"
-                  target="_blank"
                 />{" "}
                 MayaPe
               </div>
