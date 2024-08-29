@@ -9,7 +9,7 @@ const WorkSteps = () => {
               aria-hidden="true"
             ></div>
             <span className="relative text-gray-800 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-b dark:from-sky-500 dark:to-sky-50">
-              Our Working in just Six Simple Steps
+              Our Working in just Five Simple Steps
             </span>
           </div>
         </div>
@@ -195,12 +195,12 @@ const WorkSteps = () => {
               Step 5
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Fund Transfer to Merchant’s Bank Account:
+              Fund Transfer to Merchant’s Bank Account:
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              We believe in continuous improvement. After deployment, we'll
-              regularly review the solution and make updates to ensure it
-              remains effective and efficient, adapting to your evolving needs.
+              MayaPe provides an instant payout feature where businesses can
+              transfer the payments they receive to their bank accounts in
+              real-time.
             </p>
           </div>
           <div className="bg-gradient-to-l from-sky-200 via-sky-50 rounded-sm ">
