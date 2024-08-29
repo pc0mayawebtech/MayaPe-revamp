@@ -9,7 +9,7 @@ const WorkSteps = () => {
               aria-hidden="true"
             ></div>
             <span className="relative text-gray-800 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-b dark:from-sky-500 dark:to-sky-50">
-              Our Working in just Five Simple Steps
+              Our Working in just Six Simple Steps
             </span>
           </div>
         </div>
@@ -25,12 +25,13 @@ const WorkSteps = () => {
               Step 1
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Understand Your Needs
+              Verify Your Business
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              We start by understanding your unique business requirements and
-              goals. Our team will work closely with you to identify your pain
-              points and develop a tailored solution.
+              Once you have decided to be our partner, our team will ask you
+              share certain details regarding your business, to tailor a
+              solution for your case. A thorough analysis will be done by our
+              team for your business.
             </p>
           </div>
           <div className="bg-gradient-to-l from-sky-200 via-sky-50 rounded-sm ">
@@ -77,13 +78,12 @@ const WorkSteps = () => {
               Step 2
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Design the Solution
+              Receive a Unique Dashboard
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Our experienced designers will create a visually appealing and
-              user-friendly interface that aligns with your brand and
-              objectives. We'll work closely with you to ensure the design meets
-              your expectations.
+              Upon successful business verification you will be handed a
+              visually appealing and user-friendly interface that aligns with
+              your brand and objectives.
             </p>
           </div>
         </section>
@@ -111,12 +111,12 @@ const WorkSteps = () => {
               Step 3
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Develop the Solution
+              Start Accepting The Payments:
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Our skilled developers will bring the design to life, using
-              cutting-edge technologies and best practices to ensure a
-              high-quality, scalable, and secure solution.
+              The dashboard will have a unified QR Code that can accept payments
+              from multiple UPI (Unified Payments Interface) apps, such as
+              Google Pay, PhonePe, Paytm, and others.
             </p>
           </div>
           <div className="bg-gradient-to-l from-sky-200 via-sky-50 rounded-sm ">
@@ -163,12 +163,11 @@ const WorkSteps = () => {
               Step 4
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Deploy and Maintain
+              Payment Processing:
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Once the solution is developed, we'll deploy it to the appropriate
-              infrastructure and provide ongoing maintenance and support to
-              ensure it continues to meet your needs.
+              Once the payment is processed successfully, the funds are
+              instantly transferred to the merchant's MayaPe account.
             </p>
           </div>
         </section>
@@ -196,7 +195,7 @@ const WorkSteps = () => {
               Step 5
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Continuous Improvement
+            Fund Transfer to Merchant’s Bank Account:
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               We believe in continuous improvement. After deployment, we'll

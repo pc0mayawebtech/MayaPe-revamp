@@ -24,15 +24,15 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-3">
               <h1 className="text-white bg-sky-500 rounded-md w-full sm:w-5/12 px-4 py-1 text-center">
-                B2B Payment Software
+                All Your Shops At One Place
               </h1>
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                The Business-to-Business Payment Network
+                Tranforming The Payment Landscape
               </h2>
               <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Paystand’s B2B payment solution deletes transaction fees, lets
-                you operate your accounts receivable on autopilot, and turns
-                your cash cycle into a cash instant.
+                With MayaPe's B2B payment solution empower your business with
+                latest digital payment technology and seamless transactions.
+                <br />A trusted network for all your transactions.
               </p>
             </div>
             <Button
