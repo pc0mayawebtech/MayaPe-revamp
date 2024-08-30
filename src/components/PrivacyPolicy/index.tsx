@@ -312,7 +312,7 @@ const PrivacyPolicy = () => {
             Sector 2, Noida, Uttar Pradesh <br /> 201301
           </h4>
           <br />
-          info@webwisestudio.in <br /> +91 77777 77777
+          info@webwisestudio.in <br /> +91 7683021914
         </p>
       </div>
     </div>
