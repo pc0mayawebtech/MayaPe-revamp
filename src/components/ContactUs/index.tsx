@@ -2,8 +2,15 @@ import { MapPinIcon } from "lucide-react";
 import { Button } from "../ui/button";
 import { Link } from "react-router-dom";
 import ContactForm from "../ContactForm";
+import { useEffect } from "react";
 
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <section className="w-full py-12 md:py-24 lg:py-40 bg-[url('/blue-bg-2.png')] bg-no-repeat bg-cover ">

@@ -1,4 +1,12 @@
+import { useEffect } from "react";
+
 const PrivacyPolicy = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div className="min-h-screen py-8 sm:py-16 max-w-[1200px] mx-auto px-4">
       <h1 className="uppercase text-center text-2xl sm:text-5xl font-semibold after:content-[' '] after:m-auto after:block after:w-12 after:h-1 sm:after:h-2 after:mt-2 sm:after:mt-4 after:bg-sky-500 mb-28">

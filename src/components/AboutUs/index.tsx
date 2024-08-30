@@ -1,9 +1,16 @@
 import { CheckIcon, MoveRight } from "lucide-react";
 import { Button } from "../ui/button";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const AboutUs = () => {
-  const navigate = useNavigate()
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+  const navigate = useNavigate();
   return (
     <div className="w-full">
       <section className="w-full py-20 md:py-24 lg:py-28 bg-[url('/blue-bg-2.png')] bg-no-repeat bg-cover px-4 sm:px-8">
@@ -26,7 +33,7 @@ const AboutUs = () => {
               <Button
                 variant={"ghost"}
                 className="text-sky-500 hover:text-sky-600 hover:backdrop-blur-sm hover:bg-[#ffffff69] mt-4"
-                onClick={()=> navigate('/contact-us')}
+                onClick={() => navigate("/contact-us")}
               >
                 Get Started <MoveRight size={15} className="ml-2" />{" "}
               </Button>
@@ -139,7 +146,7 @@ const AboutUs = () => {
             </div>
           </div>
         </section>
-        
+
         <section className="w-full py-12 md:py-24 lg:py-12 ">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
