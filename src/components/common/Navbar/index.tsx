@@ -1,10 +1,11 @@
 import "./index.css";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "../../ui/sheet";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../../ui/button";
 import { MenuIcon } from "lucide-react";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const navItems = [
     { name: "Home", to: "/" },
     { name: "About Us", to: "/about-us" },
@@ -55,13 +56,13 @@ const Navbar = () => {
             <div className="flex flex-col h-full p-4">
               <div className="flex-grow flex flex-col gap-8">
                 {navItems.map((item, index) => (
-                  <Link
+                  <SheetClose
                     key={index}
-                    to={item.to}
-                    className="text-sm font-medium hover:underline underline-offset-8 hover:text-sky-500"
+                    onClick={() => navigate(item.to)}
+                    className="text-left text-md hover:text-sky-500 font-medium hover:underline underline-offset-8"
                   >
-                    <SheetClose>{item.name}</SheetClose>
-                  </Link>
+                    {item.name}
+                  </SheetClose>
                 ))}
               </div>
               <a
@@ -69,12 +70,14 @@ const Navbar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button
-                  variant="outline"
-                  className="mt-auto bg-sky-500 text-white hover:bg-sky-600 hover:text-white"
-                >
-                  <SheetClose>Login</SheetClose>
-                </Button>
+                <SheetClose className="w-full">
+                  <Button
+                    variant="outline"
+                    className="mt-auto bg-sky-500 text-white hover:bg-sky-600 hover:text-white w-full"
+                  >
+                    Login
+                  </Button>
+                </SheetClose>
               </a>
             </div>
           </SheetContent>

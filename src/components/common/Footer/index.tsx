@@ -59,7 +59,8 @@ const Footer = () => {
                     <li>
                       <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        to="#"
+                        to="https://mayapayinpayout.com/login"
+                        target="_blank"
                       >
                         Sign In
                       </Link>
@@ -74,15 +75,15 @@ const Footer = () => {
                     <li>
                       <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        to="#"
+                        to="/terms"
                       >
-                        Terms &amp; Conditions
+                        Terms of Use
                       </Link>
                     </li>
                     <li>
                       <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        to="#"
+                        to="/privacy"
                       >
                         Privacy Policy
                       </Link>
@@ -90,7 +91,7 @@ const Footer = () => {
                     <li>
                       <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        to="#"
+                        to="contact-us"
                       >
                         Contact Us
                       </Link>

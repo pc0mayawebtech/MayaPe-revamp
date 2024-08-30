@@ -69,7 +69,6 @@ const ContactForm = () => {
         } catch (e) {
           console.error("Error adding document: ", e);
         }
-      console.log("Form data submitted:", formData);
       setFormData({
         name: "",
         email: "",

@@ -7,19 +7,19 @@ const Hero = () => {
   const navigate = useNavigate();
   return (
     <div className="relative">
-      <section className="w-full py-24 md:py-24 lg:py-24 heroSectionMain min-h-[90vh] max-h-screen px-4 sm:px-8">
-        <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
+      <section className="w-full py-16 md:py-24 lg:py-24 heroSectionMain min-h-[90vh] sm:max-h-screen px-4 sm:px-8">
+        <div className="HomeHeroMain container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
           <img
             src="/dashboard1.png"
             alt="dashboard"
-            className="heroDashboard hidden sm:block absolute right-10 top-10 h-48 w-auto rounded-md z-[2]"
+            className="heroDashboard sm:block absolute right-10 top-10 h-32 sm:h-48 w-auto rounded-md z-[2]"
           />
           <img
             src="/payMobile.svg"
             width="450"
             height="310"
             alt="Features"
-            className="hidden sm:block mx-auto overflow-hidden z-[3] rounded-xl object-cover object-center lg:order-last"
+            className=" sm:block mx-auto overflow-hidden z-[3] rounded-xl object-cover object-center lg:order-last"
           />
           <div className="space-y-8">
             <div className="space-y-3">
